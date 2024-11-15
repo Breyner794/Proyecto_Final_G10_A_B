@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="../proyecto_final/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Conctactanos</title>
+    <link rel="icon" href="imagen_trabajo_1-removebg-preview.png" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="carritocompra.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="logo_link" href="http://127.0.0.1:5500/index.html">
+        <img src="imagen_trabajo_1-removebg-preview.png" alt="Logo" /></a>
+      <!-- NOMBRE DE LA EMPRESA -->
+      <a class="marca" style="font-size: 70px; color: rgb(6, 255, 222); font-family: Georgia, 'Times New Roman', Times, serif;"><mark style="border-radius: 25px;">STUDENT MARKET</mark></a>   
+    </div>
+  </nav>
+
+
+      <div class="card text-bg-info mb-3" style="width: 1470px;">
+        <div class="card-header" style="font-size: 60px;">Contactos a nuestras líneas de atención.</div>
+        <div class="card-body d-flex">
+
+          <img src="imagen_trabajo_1-removebg-preview.png" alt="Logo" style="width: 500px; height: 500px;">
+
+          <div>
+            <h5 class="card-title">Correos de contactos.</h5>
+            <ul>
+              <li>Atención al Cliente: atencion.cliente@studentmarket.com</li>
+              <li>Soporte Técnico: soporte.tecnico@studentmarket.com</li>
+              <li>Ventas: ventas@studentmarket.com</li>
+              <li>Recursos Humanos: rrhh@studentmarket.com</li>
+            </ul>
+            <h5 class="card-title">Número de contactos</h5>
+            <ul>
+              <li>Atención al Cliente: +57 2 555 1234 Ext. 101</li>
+              <li>Soporte Técnico: +57 2 555 1234 Ext. 102</li>
+              <li>Ventas: +57 2 555 1234 Ext. 103</li>
+              <li>Recursos Humanos: +57 2 555 1234 Ext. 104</li>
+            </ul>
+            <h5 class="card-title">Ubicación</h5>
+            <ul>
+              <li>Student Market S.A.S.
+                Calle 123 #45-67
+                Barrio El Comercio
+                Cali, Valle del Cauca
+                Colombia</li>
+              <li>Teléfono: +57 2 555 1234
+                Correo Electrónico: info@studentmarket.com</li>
+            </ul>
+            <h5 class="card-title">Horas de atención</h5>
+            <ul>
+              <li>Lunes a Viernes: 8:00 AM - 6:00 PM</li>
+              <li>Sábados: 9:00 AM - 2:00 PM</li>
+              <li>Domingos y Festivos: Cerrado</li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" style="margin: 20px; font-size: 30px;" type="button" onclick="location.href='index.html'">Regresar a la página principal</button>
+        </div>
+      </div>  
+      
+      <div class="card">
+        <div class="card-header">
+          Para más información, llene los siguientes datos:
+        </div>
+        <div class="card-body">
+          
+          <form id="formulario" action="contactanos.html" method="post">
+            <fieldset>
+                <legend>Información personal</legend>
+                <label for="nombre">Nombre (Mínimo 3 caracteres):</label>
+                <input type="text" id="nombre" name="nombre" required minlength="3"><br><br>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" name="correo" id="correo" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+.[a-zA-Z]{2,}" title="Formato de correo electrónico: ejemplo@dominio.com">
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Términos y condiciones</legend>
+                <label for="terminos">Acepto términos y condiciones</label>
+                <input type="checkbox" name="terminos" id="terminos" required><br>
+                <label for="suscripcion">Suscríbase a nuestro boletín</label>
+                <input type="checkbox" name="suscripcion" id="suscripcion">
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Confirmación</legend>
+                <input type="submit" class="btn btn-primary" value="ENVIAR">
+                <input type="reset" class="btn btn-primary" value="BORRAR">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+</body>
+</html>

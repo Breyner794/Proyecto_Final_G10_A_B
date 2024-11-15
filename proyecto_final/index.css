@@ -1,0 +1,89 @@
+.container-fluid img{
+    height: 150px;
+    width: 150px;
+}
+.container-fluid{
+    text-align: center;
+    align-content: center;
+}
+.marca{
+    font-size: 30px;
+    text-decoration: none;
+    color: rgba(37, 36, 36, 0.671);
+    
+}
+.img-fluid{
+    align-content: center;
+    text-align: center;
+}
+.nav-item{
+    color: rgba(80, 231, 35, 0.66);
+}
+.navbar{
+    display: flex;
+    background-image: url('8bit.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center -400px;
+    
+}
+.categorias{
+    padding: 30px;
+    align-content: center;
+    text-align: center; 
+     display: flex;      /*se agrega las variables, display, flex-wrap, y justify-content */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    float: left;
+    width: 40rem;
+    margin: 20px;
+    padding: 30px;
+}
+.card img{
+    height: 500px;
+    border-radius: 100px; 
+}
+.card-text{
+    font-size: 30px;
+}
+.eslogan{
+    height: -90px;
+}
+.presentacion{
+    margin: 20px;
+}
+.card-title{
+    font-size: 30px;
+}
+li{
+    font-size: 20px;
+}
+/* ALTERNATIVA PARA LAS TARJETAS, QUEDAN EN UN LUGAR CENTRADO Y ACORDE AL TAMAÑO
+DE LA PANTALLA, SE DEBE DE DESCOMETNAR ESTA PARTE SI NECESITAMOS CAMBIARLAS
+ */
+/* .categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas
+}
+.cards {
+    flex: 1 1 calc(50% - 40px); /* Ajusta el tamaño de las tarjetas 
+    box-sizing: border-box;
+    max-width: 300px; /* Ajusta el ancho máximo de las tarjetas 
+}
+.card img {
+    width: 100%;
+    height: auto;
+} */
+.card-empty {
+
+    padding: 20000px;
+    text-align: center;
+
+}
+
